@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  background: radial-gradient(circle at 20% 20%, rgba(74,141,252,0.08), transparent 40%),
+              radial-gradient(circle at 80% 0%, rgba(74,141,252,0.06), transparent 40%),
+              #020617;
+
+  color: #e0e8f9;
+  font-family: Inter, sans-serif;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+
+
+@keyframes spin-slow {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  50% { transform: rotateX(180deg) rotateY(180deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 1.5s linear infinite;
+}
