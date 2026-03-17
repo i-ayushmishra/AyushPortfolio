@@ -6,14 +6,14 @@ import Experience from "./components/Experience"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import BackToTop from "./components/BackToTop"
-import Preloader from "./components/Preloader"
+// import Preloader from "./components/Preloader"
 
 function App() {
 
   return (
     <>
       <div>
-      <Preloader/>
+      {/* <Preloader/> */}
       <Navbar />
       <Hero />
       <About />
